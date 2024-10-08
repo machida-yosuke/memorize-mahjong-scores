@@ -6,7 +6,7 @@ import { ContentLayout } from "@/components/layouts/content-layout";
 import { ALL_SCORES } from "@/score/score";
 import { random } from "@/utils/array/compareExclude";
 import { Box } from "@chakra-ui/react";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const TopRoute = () => {
   // const [isShowScoreList, setIsShowScoreList] = useState<boolean>(false);
