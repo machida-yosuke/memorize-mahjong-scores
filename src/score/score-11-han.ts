@@ -1,19 +1,17 @@
-import { ScoreType } from "./score";
+import type { ScoreType } from "./score";
 
-export const SCORES_11_HAN:ScoreType[] = [
+export const SCORES_11_HAN: ScoreType[] = [
   {
     han: 11,
-    score: 
-      {
-        tsumo: {
-          ko: [6000,12000],
-          oya: 12000,
-        },
-        ron: {
-          ko: 24000,
-          oya: 36000,
-        }
-      }
-    
+    score: {
+      tsumo: {
+        ko: [6000, 12000],
+        oya: 12000,
+      },
+      ron: {
+        ko: 24000,
+        oya: 36000,
+      },
+    },
   },
-]
+];

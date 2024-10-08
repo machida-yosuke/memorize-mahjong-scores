@@ -1,4 +1,4 @@
-import { Primitive, z } from "zod";
+import { type Primitive, z } from "zod";
 
 export function constructZodLiteralUnionType<T extends Primitive>(
   constArray: readonly T[],
@@ -6,14 +6,14 @@ export function constructZodLiteralUnionType<T extends Primitive>(
   const literalsArray = constArray.map((literal) => z.literal(literal));
   if (!isValidZodLiteralUnion(literalsArray)) {
     throw new Error(
-      'Literals passed do not meet the criteria for constructing a union schema, the minimum length is 2',
+      "Literals passed do not meet the criteria for constructing a union schema, the minimum length is 2",
     );
   }
   return z.union(literalsArray);
 }
 
 export function isValidZodLiteralUnion<T extends z.ZodLiteral<unknown>>(
-  literals: T[]
+  literals: T[],
 ): literals is [T, T, ...T[]] {
   return literals.length >= 2;
 }

@@ -1,4 +1,3 @@
-
 import { ScoreList } from "@/app/features/score/components/score-list";
 import { ContentLayout } from "@/components/layouts/content-layout";
 // import { Fu } from "@/score/fu";
@@ -26,7 +25,7 @@ export const TopRoute = () => {
           bg={"white.main"}
         >
           {/* {isShowScoreList && */}
-            <ScoreList allScore={ALL_SCORES}/>
+          <ScoreList allScore={ALL_SCORES} />
           {/* } */}
         </Box>
       </main>
