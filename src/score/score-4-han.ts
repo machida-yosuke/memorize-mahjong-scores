@@ -4,7 +4,7 @@ export const SCORES_4_HAN:ScoreType[] = [
   {
     han: 4,
     fu: 20,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1300,2600],
@@ -15,12 +15,12 @@ export const SCORES_4_HAN:ScoreType[] = [
           oya: null,
         }
       }
-    ]
+    
   },
   {
     han: 4,
     fu: 25,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1600,3200],
@@ -31,12 +31,12 @@ export const SCORES_4_HAN:ScoreType[] = [
           oya: 9600,
         }
       }
-    ]
+    
   },
   {
     han: 4,
     fu: 30,
-    score: [
+    score: 
       {
         tsumo: {
           ko: null,
@@ -47,12 +47,12 @@ export const SCORES_4_HAN:ScoreType[] = [
           oya: 11600,
         }
       }
-    ]
+    
   },
   {
     han: 4,
     fu: 40,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [2000,4000],
@@ -63,6 +63,6 @@ export const SCORES_4_HAN:ScoreType[] = [
           oya: 12000,
         }
       }
-    ]
+    
   }
 ]

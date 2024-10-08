@@ -3,7 +3,7 @@ import { ScoreType } from "./score";
 export const SCORES_12_HAN:ScoreType[] = [
   {
     han: 12,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [6000,12000],
@@ -14,6 +14,6 @@ export const SCORES_12_HAN:ScoreType[] = [
           oya: 36000,
         }
       }
-    ]
+    
   },
 ]

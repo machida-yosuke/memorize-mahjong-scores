@@ -4,7 +4,7 @@ export const SCORES_2_HAN:ScoreType[] = [
   {
     han: 2,
     fu: 20,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [400,700],
@@ -15,12 +15,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: null,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 25,
-    score: [
+    score: 
       {
         tsumo: {
           ko: null,
@@ -31,12 +31,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 2400,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 30,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [500,1000],
@@ -47,12 +47,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 2900,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 40,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [700, 1300],
@@ -63,12 +63,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 3900,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 50,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [800,1600],
@@ -79,12 +79,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 4800,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 60,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1000,2000],
@@ -95,12 +95,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 5800,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 70,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1200,2300],
@@ -111,12 +111,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 6800,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 80,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1300,2600],
@@ -127,12 +127,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 7700,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 90,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1500,2900],
@@ -143,12 +143,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 8700,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 100,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1600,3200],
@@ -159,12 +159,12 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 9600,
         }
       }
-    ]
+    
   },
   {
     han: 2,
     fu: 110,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1800,3600],
@@ -175,6 +175,6 @@ export const SCORES_2_HAN:ScoreType[] = [
           oya: 10600,
         }
       }
-    ]
+    
   },
 ]

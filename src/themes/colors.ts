@@ -5,12 +5,15 @@ export const colors = {
     700: "#2a69ac",
   },
   black: {
-    main: "#000000",
+    main: "#10375C",
+  },
+  orange: {
+    main: "#EB8317",
   },
   yellow: {
-    main: "#fff100",
+    main: "#F3C623",
   },
   white: {
-    main: "#ffffff",
+    main: "#F4F6FF",
   },
 };

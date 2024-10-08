@@ -4,7 +4,7 @@ export const SCORES_3_HAN:ScoreType[] = [
   {
     han: 3,
     fu: 20,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [400,700],
@@ -15,12 +15,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: null,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 25,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [800,1600],
@@ -31,12 +31,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 4800,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 30,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1000,2000],
@@ -47,12 +47,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 5800,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 40,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1300,2600],
@@ -63,12 +63,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 7700,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 50,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [1600,3200],
@@ -79,12 +79,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 9600,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 60,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [2000,3900],
@@ -95,12 +95,12 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 11600,
         }
       }
-    ]
+    
   },
   {
     han: 3,
     fu: 70,
-    score: [
+    score: 
       {
         tsumo: {
           ko: [2000,4000],
@@ -111,6 +111,6 @@ export const SCORES_3_HAN:ScoreType[] = [
           oya: 12000,
         }
       }
-    ]
+    
   }
 ]
