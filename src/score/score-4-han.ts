@@ -1,4 +1,6 @@
-export const SCORES_4_HAN = [
+import { ScoreType } from "./score";
+
+export const SCORES_4_HAN:ScoreType[] = [
   {
     han: 4,
     fu: 20,

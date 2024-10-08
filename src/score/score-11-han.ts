@@ -1,6 +1,8 @@
-export const SCORES_12_HAN = [
+import { ScoreType } from "./score";
+
+export const SCORES_11_HAN:ScoreType[] = [
   {
-    han: 12,
+    han: 11,
     score: [
       {
         tsumo: {
