@@ -34,10 +34,16 @@ export const ScoreListItem = ({ score }: Props) => {
           ツモ
         </Text>
         <Text fontFamily="gothic.MPLUS" fontSize={"md"} letterSpacing={1.2}>
-          自分が子: {score.score.tsumo.ko?.join(" | ") || "❌"}
+          自分が子:{" "}
+          {score.score.tsumo.self_ko.ko
+            ? `${score.score.tsumo.self_ko.ko}/${score.score.tsumo.self_ko.oya}`
+            : "❌"}
         </Text>
         <Text fontFamily="gothic.MPLUS" fontSize={"md"} letterSpacing={1.2}>
-          自分が親: {score.score.tsumo.oya || "❌"}
+          自分が親:{" "}
+          {score.score.tsumo.self_ko.oya
+            ? `${score.score.tsumo.self_ko.oya}`
+            : "❌"}
         </Text>
       </Grid>
 
@@ -55,10 +61,16 @@ export const ScoreListItem = ({ score }: Props) => {
           ロン
         </Text>
         <Text fontFamily="gothic.MPLUS" fontSize={"md"} letterSpacing={1.2}>
-          自分が子: {score.score.ron.ko || "❌"}
+          自分が子:{" "}
+          {score.score.ron.self_ko.person
+            ? `${score.score.ron.self_ko.person}`
+            : "❌"}
         </Text>
         <Text fontFamily="gothic.MPLUS" fontSize={"md"} letterSpacing={1.2}>
-          自分が親: {score.score.ron.oya || "❌"}
+          自分が親:{" "}
+          {score.score.ron.self_oya.person
+            ? `${score.score.ron.self_oya.person}`
+            : "❌"}
         </Text>
       </Grid>
     </Flex>
