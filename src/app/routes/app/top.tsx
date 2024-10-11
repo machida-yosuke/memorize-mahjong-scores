@@ -79,30 +79,31 @@ export const TopRoute = () => {
   useEffect(() => {
     selectAnswer();
   }, []);
-  
+
   const next = () => {
     reset();
     resetCorrectCollection();
     selectAnswer();
   };
 
-  const selectAnswer = ()=>{
+  const selectAnswer = () => {
     const flat = ALL_SCORES.flat();
     const hanFiltered = flat.filter(
       (score) =>
         score.han >= (selectedMinHan ?? 0) &&
         score.han <= (selectedMaxHan ?? HAN.length),
     );
-    
-    const fuHanFiltered = hanFiltered.filter(
-      (score) =>{
-        if (!score.fu) return true;
-        return score.fu >= (selectedMinFu ?? 0) && score.fu <= (selectedMaxFu ?? Math.max(...FU));
-      }
-    );
+
+    const fuHanFiltered = hanFiltered.filter((score) => {
+      if (!score.fu) return true;
+      return (
+        score.fu >= (selectedMinFu ?? 0) &&
+        score.fu <= (selectedMaxFu ?? Math.max(...FU))
+      );
+    });
 
     setAnswer(random(fuHanFiltered)[0]);
-  }
+  };
 
   const { register, handleSubmit, reset } = useForm<Inputs>();
 
@@ -416,7 +417,7 @@ export const TopRoute = () => {
             </Flex>
           </FormControl>
 
-          <Flex flexDirection={'column'} alignItems={'center'}>
+          <Flex flexDirection={"column"} alignItems={"center"}>
             <Flex alignItems={"center"} gap={2}>
               <Text
                 fontFamily="gothic.MPLUS"
@@ -499,7 +500,7 @@ export const TopRoute = () => {
               </Text>
               <Select
                 placeholder="フ数を選択"
-                onChange={(e:ChangeEvent<HTMLSelectElement>) =>
+                onChange={(e: ChangeEvent<HTMLSelectElement>) =>
                   setSelectedMaxFu(e.target.value as unknown as Fu)
                 }
                 isDisabled={!selectedMinFu}
@@ -513,7 +514,7 @@ export const TopRoute = () => {
               </Select>
             </Flex>
           </Flex>
-          
+
           <ScoreList
             allScore={ALL_SCORES}
             isOpen={isShowScoreList}
