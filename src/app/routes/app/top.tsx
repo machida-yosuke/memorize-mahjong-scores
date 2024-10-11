@@ -138,7 +138,11 @@ export const TopRoute = () => {
           bg={"white.main"}
         >
           <FormControl as={"form"} onSubmit={handleSubmit(checkAnswer)}>
-            <Flex alignItems={"center"} flexDirection={"column"} p={{sp:5,tb:10}}>
+            <Flex
+              alignItems={"center"}
+              flexDirection={"column"}
+              p={{ sp: 5, tb: 10 }}
+            >
               <Text
                 fontFamily="gothic.MPLUS"
                 fontWeight="black"
@@ -181,7 +185,7 @@ export const TopRoute = () => {
                   ツモ
                 </Text>
 
-                <Flex gap={8} flexDirection={{sp:'column',tb:'row'}}>
+                <Flex gap={8} flexDirection={{ sp: "column", tb: "row" }}>
                   <Flex flexDirection={"column"} gap={2}>
                     <Text
                       fontFamily="gothic.MPLUS"
@@ -313,7 +317,7 @@ export const TopRoute = () => {
 
                 <Box h={4} />
 
-                <Flex gap={8} flexDirection={{sp:'column',tb:'row'}}>
+                <Flex gap={8} flexDirection={{ sp: "column", tb: "row" }}>
                   <Flex flexDirection={"column"} gap={2}>
                     <Text
                       fontFamily="gothic.MPLUS"

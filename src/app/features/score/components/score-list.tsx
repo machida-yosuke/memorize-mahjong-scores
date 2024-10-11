@@ -22,7 +22,7 @@ type Props = {
 
 export const ScoreList = ({ allScore, isOpen, onClose }: Props) => {
   return (
-    <Modal isOpen={isOpen} size={{sp:"sm",tb:"2xl"}} onClose={onClose}>
+    <Modal isOpen={isOpen} size={{ sp: "sm", tb: "2xl" }} onClose={onClose}>
       <ModalOverlay />
       <ModalContent bg={"white.main"}>
         <ModalHeader
@@ -41,10 +41,13 @@ export const ScoreList = ({ allScore, isOpen, onClose }: Props) => {
               <Grid
                 key={`han-${index}`}
                 w="full"
-                templateColumns={{sp:"repeat(1, 320px)",md:"repeat(1, 550px)"}}
+                templateColumns={{
+                  sp: "repeat(1, 320px)",
+                  md: "repeat(1, 550px)",
+                }}
                 justifyContent={"center"}
                 gap={10}
-                overflow={'hidden'}
+                overflow={"hidden"}
               >
                 <Box w={"full"} h={1} bg={"black.main"} mt={10} />
                 {scores.map((score, index) => (
