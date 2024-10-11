@@ -18,7 +18,6 @@ import { SCORES_13_HAN } from "./score-13-han";
 import { tsumoScoreSchema } from "./tsumo_scores";
 
 const ronSchema = z.union([ronScoreSchema, z.literal(null)]);
-const tsumoArraySchema = z.union([z.array(tsumoScoreSchema), z.literal(null)]);
 const tsumoSchema = z.union([tsumoScoreSchema, z.literal(null)]);
 
 export const ScoreSchema = z.object({
@@ -26,12 +25,21 @@ export const ScoreSchema = z.object({
   fu: z.union([fuSchema, z.literal(undefined)]),
   score: z.object({
     tsumo: z.object({
-      ko: tsumoArraySchema,
-      oya: tsumoSchema,
+      self_ko: z.object({
+        ko: tsumoSchema,
+        oya: tsumoSchema,
+      }),
+      self_oya: z.object({
+        all: tsumoSchema,
+      }),
     }),
     ron: z.object({
-      ko: ronSchema,
-      oya: ronSchema,
+      self_ko: z.object({
+        person: ronSchema,
+      }),
+      self_oya: z.object({
+        person: ronSchema,
+      }),
     }),
   }),
 });

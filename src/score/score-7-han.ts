@@ -5,12 +5,21 @@ export const SCORES_7_HAN: ScoreType[] = [
     han: 7,
     score: {
       tsumo: {
-        ko: [3000, 6000],
-        oya: 6000,
+        self_ko: {
+          ko: 3000,
+          oya: 6000,
+        },
+        self_oya: {
+          all: 6000,
+        },
       },
       ron: {
-        ko: 12000,
-        oya: 18000,
+        self_ko: {
+          person: 12000,
+        },
+        self_oya: {
+          person: 18000,
+        },
       },
     },
   },

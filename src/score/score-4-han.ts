@@ -6,12 +6,21 @@ export const SCORES_4_HAN: ScoreType[] = [
     fu: 20,
     score: {
       tsumo: {
-        ko: [1300, 2600],
-        oya: 2600,
+        self_ko: {
+          ko: 1300,
+          oya: 2600,
+        },
+        self_oya: {
+          all: 2600,
+        },
       },
       ron: {
-        ko: null,
-        oya: null,
+        self_ko: {
+          person: null,
+        },
+        self_oya: {
+          person: null,
+        },
       },
     },
   },
@@ -20,12 +29,21 @@ export const SCORES_4_HAN: ScoreType[] = [
     fu: 25,
     score: {
       tsumo: {
-        ko: [1600, 3200],
-        oya: 3200,
+        self_ko: {
+          ko: 1600,
+          oya: 3200,
+        },
+        self_oya: {
+          all: 3200,
+        },
       },
       ron: {
-        ko: 6400,
-        oya: 9600,
+        self_ko: {
+          person: 6400,
+        },
+        self_oya: {
+          person: 9600,
+        },
       },
     },
   },
@@ -34,12 +52,21 @@ export const SCORES_4_HAN: ScoreType[] = [
     fu: 30,
     score: {
       tsumo: {
-        ko: null,
-        oya: 3900,
+        self_ko: {
+          ko: null,
+          oya: null,
+        },
+        self_oya: {
+          all: 3900,
+        },
       },
       ron: {
-        ko: null,
-        oya: 11600,
+        self_ko: {
+          person: null,
+        },
+        self_oya: {
+          person: 11600,
+        },
       },
     },
   },
@@ -48,12 +75,21 @@ export const SCORES_4_HAN: ScoreType[] = [
     fu: 40,
     score: {
       tsumo: {
-        ko: [2000, 4000],
-        oya: 4000,
+        self_ko: {
+          ko: 2000,
+          oya: 4000,
+        },
+        self_oya: {
+          all: 4000,
+        },
       },
       ron: {
-        ko: 8000,
-        oya: 12000,
+        self_ko: {
+          person: 8000,
+        },
+        self_oya: {
+          person: 12000,
+        },
       },
     },
   },
