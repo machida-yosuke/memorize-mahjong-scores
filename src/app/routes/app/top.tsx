@@ -138,7 +138,7 @@ export const TopRoute = () => {
           bg={"white.main"}
         >
           <FormControl as={"form"} onSubmit={handleSubmit(checkAnswer)}>
-            <Flex alignItems={"center"} flexDirection={"column"} p={10}>
+            <Flex alignItems={"center"} flexDirection={"column"} p={{sp:5,tb:10}}>
               <Text
                 fontFamily="gothic.MPLUS"
                 fontWeight="black"
@@ -181,14 +181,15 @@ export const TopRoute = () => {
                   ツモ
                 </Text>
 
-                <Flex gap={8}>
+                <Flex gap={8} flexDirection={{sp:'column',tb:'row'}}>
                   <Flex flexDirection={"column"} gap={2}>
                     <Text
                       fontFamily="gothic.MPLUS"
                       fontSize={"md"}
                       letterSpacing={1.2}
+                      textAlign={"center"}
                     >
-                      自分が子
+                      🀄️自分が子🀄️
                     </Text>
 
                     <Flex alignItems={"center"} gap={2} position={"relative"}>
@@ -258,8 +259,9 @@ export const TopRoute = () => {
                       fontFamily="gothic.MPLUS"
                       fontSize={"md"}
                       letterSpacing={1.2}
+                      textAlign={"center"}
                     >
-                      自分が親
+                      🀄️自分が親🀄️
                     </Text>
 
                     <Flex alignItems={"center"} gap={2} position={"relative"}>
@@ -311,14 +313,15 @@ export const TopRoute = () => {
 
                 <Box h={4} />
 
-                <Flex gap={8}>
+                <Flex gap={8} flexDirection={{sp:'column',tb:'row'}}>
                   <Flex flexDirection={"column"} gap={2}>
                     <Text
                       fontFamily="gothic.MPLUS"
                       fontSize={"md"}
                       letterSpacing={1.2}
+                      textAlign={"center"}
                     >
-                      自分が子
+                      🀄️自分が子🀄️
                     </Text>
 
                     <Flex alignItems={"center"} gap={2} position={"relative"}>
@@ -355,8 +358,9 @@ export const TopRoute = () => {
                       fontFamily="gothic.MPLUS"
                       fontSize={"md"}
                       letterSpacing={1.2}
+                      textAlign={"center"}
                     >
-                      自分が親
+                      🀄️自分が親🀄️
                     </Text>
                     <Flex alignItems={"center"} gap={2}>
                       <Text
@@ -417,7 +421,7 @@ export const TopRoute = () => {
             </Flex>
           </FormControl>
 
-          <Flex flexDirection={"column"} alignItems={"center"}>
+          <Flex flexDirection={"column"} alignItems={"center"} gap={2} p={10}>
             <Flex alignItems={"center"} gap={2}>
               <Text
                 fontFamily="gothic.MPLUS"
