@@ -80,10 +80,18 @@ export const TopRoute = () => {
     selectAnswer();
   }, []);
 
+  const moveToScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   const next = () => {
     reset();
     resetCorrectCollection();
     selectAnswer();
+    moveToScrollTop();
   };
 
   const selectAnswer = () => {
@@ -126,6 +134,7 @@ export const TopRoute = () => {
       isRonSelfKoCorrect,
       isRonSelfOyaCorrect,
     });
+    moveToScrollTop();
   };
 
   return (
@@ -134,7 +143,6 @@ export const TopRoute = () => {
         <Box
           minHeight={"100svh"}
           w={"full"}
-          overflow={"hidden"}
           bg={"white.main"}
         >
           <FormControl as={"form"} onSubmit={handleSubmit(checkAnswer)}>
@@ -143,34 +151,39 @@ export const TopRoute = () => {
               flexDirection={"column"}
               p={{ sp: 5, tb: 10 }}
             >
-              <Text
-                fontFamily="gothic.MPLUS"
-                fontWeight="black"
-                fontSize={"4xl"}
-                letterSpacing={1.2}
-              >
-                問題
-              </Text>
-              <Box h={8} />
-              {answer ? (
+              <Box position={'sticky'} w='full' top={0} p={'10px 0'} bg={'white.main'} zIndex={1} borderBottom={'1px solid'}>
                 <Text
                   fontFamily="gothic.MPLUS"
                   fontWeight="black"
-                  fontSize={"2xl"}
+                  fontSize={"4xl"}
                   letterSpacing={1.2}
+                  textAlign={"center"}
                 >
-                  {answer?.han}ハン{answer?.fu && `/${answer?.fu}フ`}の点数は？
+                  問題
                 </Text>
-              ) : (
-                <Text
-                  fontFamily="gothic.MPLUS"
-                  fontWeight="black"
-                  fontSize={"2xl"}
-                  letterSpacing={1.2}
-                >
-                  問題がありません
-                </Text>
-              )}
+                <Box h={2} />
+                {answer ? (
+                  <Text
+                    fontFamily="gothic.MPLUS"
+                    fontWeight="black"
+                    fontSize={"2xl"}
+                    letterSpacing={1.2}
+                    textAlign={"center"}
+                  >
+                    {answer?.han}ハン{answer?.fu && `/${answer?.fu}フ`}の点数は？
+                  </Text>
+                ) : (
+                  <Text
+                    fontFamily="gothic.MPLUS"
+                    fontWeight="black"
+                    fontSize={"2xl"}
+                    letterSpacing={1.2}
+                    textAlign={"center"}
+                  >
+                    問題がありません
+                  </Text>
+                )}
+              </Box>
 
               <Box h={8} />
 
