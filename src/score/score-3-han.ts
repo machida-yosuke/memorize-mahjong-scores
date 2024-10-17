@@ -7,19 +7,19 @@ export const SCORES_3_HAN: ScoreType[] = [
     score: {
       tsumo: {
         self_ko: {
-          ko: 400,
-          oya: 700,
+          ko: 1300,
+          oya: 2600,
         },
         self_oya: {
-          all: 700,
+          all: 2600,
         },
       },
       ron: {
         self_ko: {
-          person: null,
+          person: 5200,
         },
         self_oya: {
-          person: null,
+          person: 7700,
         },
       },
     },

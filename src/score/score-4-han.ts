@@ -16,10 +16,10 @@ export const SCORES_4_HAN: ScoreType[] = [
       },
       ron: {
         self_ko: {
-          person: null,
+          person: 5200,
         },
         self_oya: {
-          person: null,
+          person: 7700,
         },
       },
     },
@@ -53,8 +53,8 @@ export const SCORES_4_HAN: ScoreType[] = [
     score: {
       tsumo: {
         self_ko: {
-          ko: null,
-          oya: null,
+          ko: 2000,
+          oya: 3000,
         },
         self_oya: {
           all: 3900,
@@ -62,7 +62,7 @@ export const SCORES_4_HAN: ScoreType[] = [
       },
       ron: {
         self_ko: {
-          person: null,
+          person: 7700,
         },
         self_oya: {
           person: 11600,
